@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 01 JS básico</title>
+</head>
+<body>
+    <script>
+        var nombre = '';
+        var edad = null;
+
+        const miEdad = 41;
+
+        nombre = prompt('Hola, ¿como te llamas?');
+
+        if (nombre != '') {
+            console.log(`Gracias ${nombre} por decirme como te llamas`);
+
+            edad = prompt(`¿Que edad tienes ${nombre}?`);
+
+            if (edad == null){
+                console.log('Cacho venao, no has dicho tu edad!!');
+            }else{
+                let msg = '';
+                miEdad<edad ? msg = `${nombre} eres mayor que yo.` : msg = `Soy mayor que tu`;
+                console.log(msg);
+            }
+        }else{
+            console.log('Cacho venao, no has puesto el nombre!!');
+        }
+    </script>
+</body>
+</html>
+
+
